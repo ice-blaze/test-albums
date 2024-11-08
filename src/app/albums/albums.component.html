@@ -1,0 +1,8 @@
+<p>albums works!</p>
+{{ meta?.title }}<br />
+{{ meta?.date }}<br />
+@if (cover !== "") {
+<img [ngSrc]="cover" height="200" width="200" />
+} @for (image of images; track $index) {
+<img [ngSrc]="image" height="200" width="200" />
+}
